@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery intro and implementation</title>
+    <script src="./js/jquery-3.6.1.js"></script>
+
+
+    <script>
+        // This document.ready() is used when the script is in the body tag.
+        
+
+        // the output will still work if it is in the body tag instead of head tag
+
+        // this $(document).ready() is used to make the document
+        // get ready and then it will be used.
+        $(document).ready(function(){
+         var b=$("h2").html();
+        alert(b);
+        })
+      ;
+    </script>
+</head>
+<body>
+    
+    <h2 id="h2">Query Selector</h2>
+</body>
+</html>
