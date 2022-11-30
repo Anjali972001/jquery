@@ -4,13 +4,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JQuery Selector</title>
-    <script src="./js/jquery-3.6.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#Hide").click(function(){
+        $("p").hide(10000);
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+      $("toggle").click(function(){
+         $("p").toggle();
+      });
+    });
+      
+    </script>
 </head>
 <body>
-    <div class="container">
-        <h1>JQuery Selector</h1>
-        <hr>
-        <h2 class="text">Heading-1</h2>
-    </div>
+    <p>If you want to click on the button hide
+       and if you want to displaay than press 
+       display</p>
+   
+       <button id="Hide">Hide</button>
+       <button id="show">Show</button>
+       <button id="toggle"> Toggle</button>
+
+
+
 </body>
 </html>
