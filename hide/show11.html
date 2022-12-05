@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn1">Hide</button>
+        <button id="btn2">Show</button>
+        <button id="btn3">toggle</button>
+    </div>
+    <div id="image">
+        <img src="../New folder/anjali.jpg">
+    </div>
+<script src="../js/jquery-3.6.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn1').click(function(){
+            $('#image').hide();
+        })
+        $('#btn2').click(function(){
+            $('#image').show();
+        })
+        $('#btn3').click(function(){
+            $('#image').toggle();
+        })
+    })
+</script>
+</body>
+</html>
